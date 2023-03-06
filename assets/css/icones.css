@@ -32,7 +32,9 @@
 .icone.atencao::before{
     background-image: url(../img/ico-atencao.png);
 }
-
+.icone.importante::before {
+    background-image: url(../img/ico-atencao.png);
+}
 @media print{
     .icone::before{
         display:none !important
