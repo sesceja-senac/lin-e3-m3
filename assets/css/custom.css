@@ -61,6 +61,7 @@ video {
     top: -270px;
     left: 50%;
     transform: translateX(-50%);
+    max-width: 100%;
 }
 .marcador-div-2 {
     position: absolute;
@@ -68,6 +69,7 @@ video {
     left: 50%;
     transform: translateX(-50%);
     max-height: 450px;
+    max-width: 100%;
 }
 .p-t {
     padding-top: 120px;
@@ -196,6 +198,7 @@ video {
     margin-bottom: 40px;
     margin-top: 40px;
     padding-bottom: 50px;
+    max-width: 100%;
 }
 .letra-1 {
     width: 340px;
@@ -205,6 +208,7 @@ video {
     content: '';
     background-image: url('../design/pg1/1.png');
     background-size: contain;
+    background-repeat: no-repeat;
     width: 262px;
     height: 229px;
     position: absolute;
@@ -219,6 +223,7 @@ video {
     content: '';
     background-image: url('../design/pg1/2.png');
     background-size: contain;
+    background-repeat: no-repeat;
     width: 262px;
     height: 229px;
     position: absolute;
@@ -232,6 +237,7 @@ video {
     content: '';
     background-image: url('../design/pg1/3.png');
     background-size: contain;
+    background-repeat: no-repeat;
     width: 262px;
     height: 229px;
     position: absolute;
@@ -239,4 +245,179 @@ video {
 }
 .row-neg {
     margin-top: -80px;
+}
+
+/* painel feminismo */
+.painel-feminismo {
+    display: flex;
+    justify-content: space-between;
+    background-image: url('../design/pg1/ilustra_painel_clicavel.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 700px;
+    max-width: 1300px;
+    margin: 0px auto 0 auto;
+    padding-bottom: 120px;
+}
+.lado-a, .lado-b {
+    display: flex;
+    flex-direction: column;
+    /* background-color: #2d505490; */
+    margin: 15px;
+    max-width: 30%;
+}
+.lado-b {
+    align-items: end;
+}
+.painel-feminismo button {
+    background-position: center;
+    background-size: contain;
+    background-color: transparent;
+    border: none;
+    width: 230px;
+    height: 78px;
+    position: relative;
+    margin-top: 10px;
+}
+.painel-feminismo button.visitado::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 42px;
+    width: 42px;
+    background-image: url('../design/pg1/check.png');
+    filter: grayscale(0);
+    z-index: 10;
+}
+.painel-feminismo button:hover {
+    transform: scale(1.03);
+}
+.painel-feminismo button.visitado::after {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-image: inherit;
+    filter: grayscale(0.8);
+
+}
+.lado-a button:nth-child(1) {
+    background-image: url('../design/pg1/bt_pc_1.png');
+    margin-left: 140px;  
+}
+.lado-a button:nth-child(2) {
+    background-image: url('../design/pg1/bt_pc_2.png');
+    margin-left: 90px;
+}
+.lado-a button:nth-child(3) {
+    background-image: url('../design/pg1/bt_pc_3.png');
+    margin-left: 50px;
+}
+.lado-a button:nth-child(4) {
+    background-image: url('../design/pg1/bt_pc_4.png');
+    margin-left: 0px;
+}
+.lado-a button:nth-child(5) {
+    background-image: url('../design/pg1/bt_pc_5.png');
+    
+}
+.lado-a button:nth-child(6) {
+    background-image: url('../design/pg1/bt_pc_6.png');
+    
+}
+.lado-a button:nth-child(7) {
+    background-image: url('../design/pg1/bt_pc_7.png');
+    margin-left: 50px;
+}
+.lado-a button:nth-child(8) {
+    background-image: url('../design/pg1/bt_pc_8.png');
+    margin-left: 90px;
+}
+.lado-a button:nth-child(9) {
+    background-image: url('../design/pg1/bt_pc_9.png');
+    margin-left: 140px;
+}
+.lado-b button:nth-child(1) {
+    background-image: url('../design/pg1/bt_pc_10.png');
+    margin-right: 140px;
+}
+.lado-b button:nth-child(2) {
+    background-image: url('../design/pg1/bt_pc_11.png');
+    margin-right: 90px;
+}
+.lado-b button:nth-child(3) {
+    background-image: url('../design/pg1/bt_pc_12.png');
+    margin-right: 50px;
+}
+.lado-b button:nth-child(4) {
+    background-image: url('../design/pg1/bt_pc_13.png');
+}
+.lado-b button:nth-child(5) {
+    background-image: url('../design/pg1/bt_pc_14.png');
+}
+.lado-b button:nth-child(6) {
+    background-image: url('../design/pg1/bt_pc_15.png');
+}
+.lado-b button:nth-child(7) {
+    background-image: url('../design/pg1/bt_pc_16.png');
+    margin-right: 50px;
+}
+.lado-b button:nth-child(8) {
+    background-image: url('../design/pg1/bt_pc_17.png');
+    margin-right: 90px;
+}
+.lado-b button:nth-child(9) {
+    background-image: url('../design/pg1/bt_pc_18.png');
+    margin-right: 140px;
+}
+
+@media (max-width: 1000px){
+    .painel-feminismo {
+        background-size: 500px;
+        background-position: 50% 0%;
+        padding-top: 380px;
+        margin-top: -50px;
+        flex-direction: column;
+    }
+    .lado-b button, .lado-a button {
+        margin-left: unset;
+        margin-right: unset;
+        margin: 10px auto !important;  
+    }
+    .lado-a {
+        padding: 0 25px;
+        margin: 0 auto;
+    }
+    .lado-b {
+        padding: 0 25px;
+        margin: 0 auto;
+    }
+    .lado-a, .lado-b {
+        flex-direction: row;
+        flex-wrap: wrap;
+        max-width: 100%;
+        width: 100%;
+    }
+}
+
+@media (max-width:600px) {
+    .painel-feminismo {
+        flex-direction: column;
+        background-position: top center;
+        background-size: 300px;
+        padding-top: 220px;
+        max-width: 100%;
+    }
+    .lado-a, .lado-b {
+        align-items: center;
+        justify-content: center;
+        max-width: 100%;
+        width: 100%;
+    }
+    .lado-b button, .lado-a button {
+        margin-left: unset;
+        margin-right: unset;
+        margin: 10px auto !important;        
+    }
 }
