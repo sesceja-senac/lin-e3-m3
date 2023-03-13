@@ -1,0 +1,32 @@
+.caixa-container {
+    position: relative;
+}
+.caixa-exp {
+    max-height: 200px;
+    overflow: hidden;
+    width: 80%;
+    margin: 40px auto;
+    transition-duration: .7s;
+    position: relative;
+}
+.caixa-exp.aberta {
+    max-height: 1600px; 
+}
+.caixa-container button {
+    content: '';
+    background-image: url('../design/pg1/ico_saibamais_abre.png');
+    background-size: contain;
+    background-position: center;
+    width: 75px;
+    height: 75px;
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 11;
+    background-color: transparent;
+    border: none;
+}
+.caixa-container button:hover {
+    transform: translateX(-50%) scale(1.03);
+}
