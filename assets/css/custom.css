@@ -74,7 +74,9 @@ video {
 .p-t {
     padding-top: 120px;
 }
-
+.p-b {
+    padding-bottom: 40px;
+}
 /* ETC */
 .caixa-container {
     position: relative;
@@ -371,7 +373,48 @@ video {
     background-image: url('../design/pg1/bt_pc_18.png');
     margin-right: 140px;
 }
+.row-pg2 {
+    display: flex;
 
+}
+.row-pg2 p {
+    margin-top: 100px;
+}
+.figura-21 {
+    margin-left: -350px;
+}
+.coluna-img {
+    margin-left: -300px;
+    margin-right: 300px;
+}
+.btn-objeto {
+    display: flex;
+    justify-content: end;
+    align-items: center;  
+    margin: 40px auto;
+}
+.obj-cortico {
+    display: block;
+    width: 300px;
+    height: 337px;
+    background-image: url('../design/pg2/bt_objeto_hover.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 20px;
+}
+.obj-cortico:hover {
+    background-image: url('../design/pg2/bt_objeto.png');
+}
+.btn-objeto p {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.3rem;
+}
+.btn-objeto h4 {
+    font-size: 36px;
+    font-style: italic;
+}
 @media (max-width: 1000px){
     .painel-feminismo {
         background-size: 500px;
