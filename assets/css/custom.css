@@ -1,13 +1,96 @@
+video {
+    background-color: #333;
+    width: 560px;
+    max-width: 100%;
+    display: block;
+    margin: 60px auto;
+}
+/* BGs */
+.bg-1 {
+    background-image: url('../design/pg1/bg_escuro.png');
+}
+.bg-1 .container {
+    background-color: transparent;
+    color: white;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    position: relative;
+}
+.bg-1 .caixa {
+    color: white;
+}
+.bg-1 h3 {
+    color: #d68423;
+    font-size: 28px;
+    margin: 50px 0 15px 0;
+}
+.bg-2 {
+    background-image: url('../design/pg1/bg_claro.png');
+}
+.bg-2 .container {
+    background-color: transparent;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    position: relative;
+}
+.bg-2 h3 {
+    color: #457d7d;
+    font-size: 28px;
+    margin: 50px 0 15px 0;
+}
+.divisoria-1 {
+    background-image: url('../design/pg1/paralaxe.png');
+    height: 420px;
+    width: 100%;
+    background-attachment: fixed;
+}
+.divisoria-2 {
+    background-image: url('../design/pg1/paralaxe_2.png');
+    height: 420px;
+    width: 100%;
+    background-attachment: fixed;
+}
+.divisoria-3 {
+    background-image: url('../design/pg1/paralaxe_3.png');
+    height: 420px;
+    width: 100%;
+    background-attachment: fixed;
+}
+.marcador-div {
+    position: absolute;
+    top: -270px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.marcador-div-2 {
+    position: absolute;
+    top: -400px;
+    left: 50%;
+    transform: translateX(-50%);
+    max-height: 450px;
+}
+.p-t {
+    padding-top: 120px;
+}
+
+/* ETC */
 .caixa-container {
     position: relative;
+    padding-top: 40px;
 }
 .caixa-exp {
     max-height: 200px;
     overflow: hidden;
-    width: 80%;
+    width: 100%;
     margin: 40px auto;
     transition-duration: .7s;
     position: relative;
+    background-color: #2d5054;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding-top: 60px;
+    box-shadow: 2px 2px 4px black;
 }
 .caixa-exp.aberta {
     max-height: 1600px; 
@@ -29,4 +112,61 @@
 }
 .caixa-container button:hover {
     transform: translateX(-50%) scale(1.03);
+}
+.caixa-container.saiba-mais::before {
+    content: '';
+    background-image: url('../design/pg1/ico_saiba_mais.png');
+    background-size: 100%;
+    width: 152px;
+    height: 152px;
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 15;
+}
+.cx-laranja.icone {
+    background-color: #d68423;
+    border: none;
+    border-radius: 25px;
+    padding: 20px;
+    padding-left: 80px;
+    box-shadow: 3px 3px 4px #333;
+}
+.icone.importante::before {
+    background-color: transparent;
+    background-image: url('../design/pg1/ico_atencao.png');
+    background-size: contain;
+    height: 148px;
+    width: 148px;
+    left: -75px;
+    top: 0;
+}
+.icone.dica::before {
+    background-color: transparent;
+    background-image: url('../design/pg1/ico_dica.png');
+    background-size: contain;
+    height: 148px;
+    width: 148px;
+    left: -75px;
+    top: -20px;
+}
+.figure-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.figure-row figure {
+    color: white;
+}
+.citacao {
+    background-color: #5d95a1;
+    border-radius: 20px;
+    padding: 25px;
+    width: 70%;
+    margin-left: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    box-shadow: 3px 3px 4px #333;
+    color: white;
 }

@@ -772,3 +772,24 @@ h3, .subtitulo{
         background: none;
     }
 }
+/* Adições ao template, LP \/ */
+.titulo-conteudo {
+    position: absolute;
+    width: 100%;
+}
+.titulo-conteudo .container {
+    background-color: transparent;
+}
+footer {
+    width: 100%;
+    display: block;
+    margin-top: -70px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.pagination {
+    justify-content: center;
+}
+footer.container {
+    background-color: transparent;
+}
