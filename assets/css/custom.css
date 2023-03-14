@@ -415,6 +415,42 @@ video {
     font-size: 36px;
     font-style: italic;
 }
+.obj-cdd {
+    width: 1600px;
+    max-width: 100%;
+    min-height: 760px;
+    background-image: url('../design/pg2/fundo_painel.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 35px auto;
+}
+.obj-cdd button {
+    width: 350px;
+    height: 350px;
+    background-size: contain;
+    background-color: transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: none;
+}
+.obj-cdd button:hover {
+    transform: scale(1.03);
+}
+.obj-cdd button:nth-child(1){
+    background-image: url('../design/pg2/bt_1_hoverscale.png');
+}
+.obj-cdd button:nth-child(2){
+    background-image: url('../design/pg2/bt_2_hoverscale.png');
+    margin-top: -200px;
+}
+.obj-cdd button:nth-child(3){
+    background-image: url('../design/pg2/bt_3__hoverscale.png');
+    margin-bottom: -150px;
+}
 @media (max-width: 1000px){
     .painel-feminismo {
         background-size: 500px;
@@ -463,4 +499,16 @@ video {
         margin-right: unset;
         margin: 10px auto !important;        
     }
+    .obj-cdd {
+        height: auto;
+        flex-wrap: wrap;
+        background-image: unset;
+    }
+    .obj-cdd button {
+        margin-top: unset;
+        margin-bottom: unset;
+        margin: 10px auto;
+    }
+    .obj-cdd button:nth-child(2){margin-top: unset;}
+    .obj-cdd button:nth-child(3){margin-bottom: unset;}
 }
