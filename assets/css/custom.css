@@ -98,7 +98,7 @@ video {
     box-shadow: 2px 2px 4px black;
 }
 .caixa-exp.aberta {
-    max-height: 1600px; 
+    max-height: 1900px; 
 }
 .caixa-container button {
     content: '';
@@ -244,6 +244,23 @@ video {
     height: 229px;
     position: absolute;
     bottom: -12%;
+}
+.elza {
+    width: 540px;
+    max-width: 100%;
+    display: block;
+    margin: 40px auto;
+}
+.elza::after {
+    content: '';
+    background-image: url('../design/pg1/4.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 262px;
+    height: 229px;
+    position: absolute;
+    top: 0;
+    right: -20%;
 }
 .row-neg {
     margin-top: -80px;
@@ -451,6 +468,7 @@ video {
     background-image: url('../design/pg2/bt_3__hoverscale.png');
     margin-bottom: -150px;
 }
+
 @media (max-width: 1000px){
     
     .painel-feminismo {
@@ -523,5 +541,12 @@ video {
     }
     .letra-1::after {
         bottom: -15%;
+    }
+    .elza {
+        margin-top: 100px;
+        margin-bottom: 60px;
+    }
+    .elza::after {
+        top: -100px;
     }
 }
