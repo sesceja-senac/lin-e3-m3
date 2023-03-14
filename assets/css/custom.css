@@ -71,6 +71,10 @@ video {
     max-height: 450px;
     max-width: 100%;
 }
+.bg-refs {
+    padding-top: 60px;
+    padding-bottom: 80px;
+}
 .p-t {
     padding-top: 120px;
 }
