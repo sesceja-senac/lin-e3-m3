@@ -452,6 +452,7 @@ video {
     margin-bottom: -150px;
 }
 @media (max-width: 1000px){
+    
     .painel-feminismo {
         background-size: 500px;
         background-position: 50% 0%;
@@ -477,6 +478,10 @@ video {
         flex-wrap: wrap;
         max-width: 100%;
         width: 100%;
+    }
+    .letra-2::after {
+        left: 0;
+        bottom: -20%;
     }
 }
 
@@ -511,4 +516,12 @@ video {
     }
     .obj-cdd button:nth-child(2){margin-top: unset;}
     .obj-cdd button:nth-child(3){margin-bottom: unset;}
+    .letra-1::after, .letra-2::after, .letra-3::after {
+        width: 150px;
+        height: 150px;
+        bottom: -5%;
+    }
+    .letra-1::after {
+        bottom: -15%;
+    }
 }
