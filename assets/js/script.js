@@ -26,3 +26,12 @@ function checkBotoes(){
         if(localStorage.getItem('#modal-fem-'+i)=='visitado'){$('.modal-fem-'+ i).addClass('visitado')}
     }    
 }
+
+// galeria de artistas
+$('.modal-galeria').fadeOut()
+$('.galeria-container').hover(function(){
+    $(this).children('.modal-galeria').fadeIn()
+}, function(){
+    $(this).children('.modal-galeria').fadeOut()
+})
+if(window.innerWidth<1000){$('.modal-galeria').fadeIn()}

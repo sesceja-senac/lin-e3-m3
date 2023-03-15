@@ -74,6 +74,11 @@ video {
 .bg-refs {
     padding-top: 60px;
     padding-bottom: 80px;
+    background-image: url('../design/pg5/background.png');
+}
+.bg-refs .container {
+    padding-top: 30px;
+    padding-bottom: 20px;
 }
 .p-t {
     padding-top: 120px;
@@ -473,8 +478,89 @@ video {
     margin-bottom: -150px;
 }
 
+/* galeria de artistas */
+
+.obj-galeria {
+    max-width: 1200px;
+    display: block;
+    margin: 40px auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.obj-galeria img {
+    align-self: center;
+    transition-duration: .3s;
+}
+.obj-galeria img:hover {
+    transform: scale(1.05);
+    transition-duration: .3s;
+    cursor: pointer;
+}
+.galeria-container {
+    position: relative;
+    max-width: 30%;
+    margin: 10px 20px;
+}
+.galeria-container img {
+    max-width: 100%;
+    display: block;
+    margin: auto;
+}
+.modal-galeria {
+    background-color: white;
+    color: #333;
+    padding: 15px;
+    width: 350px;
+    position: absolute;
+    bottom: 0;
+    left: 80%;
+    z-index: 10;
+    box-shadow: 3px 3px 3px #333;
+    border-radius: 15px;
+    border: 1px solid #333;
+    line-height: 1.3rem;
+    pointer-events: none;
+}
+.modal-galeria.tres {
+    left: 0;
+    bottom: -50%;
+}
+.modal-galeria.nara {
+    left: 0;
+    bottom: 0;
+}
+.modal-galeria p {
+    margin-bottom: 0;
+}
+
 @media (max-width: 1000px){
-    
+    /* galeria */
+    .modal-galeria {
+        position: static;
+        background-color: transparent;
+        color: white;
+        border: 1px solid white;
+        border-radius: 0;
+        box-shadow: unset;
+        width: auto;
+    }
+    .galeria-container {
+        padding: 15px;
+        max-width: 40%;
+    }
+    .galeria-container img {margin: 20px auto; display: block;}
+
+
+    .coluna-img img{
+        max-width: 100%;
+        
+    }
+    .coluna-img {
+        margin-left: auto;
+        margin-right: 0;
+    }
     .painel-feminismo {
         background-size: 500px;
         background-position: 50% 0%;
@@ -505,9 +591,26 @@ video {
         left: 0;
         bottom: -20%;
     }
+    .row-pg2 {
+        flex-direction: column-reverse;
+    }
+    .row-pg2 p {
+        margin-top: unset;
+        margin-bottom: 40px;
+    }
+    .figura-21 {
+        margin-left: unset;
+        max-width: 100%;
+    }
+    .obj-cdd {
+        min-height: 460px;
+    }
 }
 
 @media (max-width:600px) {
+    .galeria-container {
+        max-width: 100%;
+    }
     .painel-feminismo {
         flex-direction: column;
         background-position: top center;
@@ -530,6 +633,8 @@ video {
         height: auto;
         flex-wrap: wrap;
         background-image: unset;
+        margin-top: -50px;
+        margin-bottom: -20px;
     }
     .obj-cdd button {
         margin-top: unset;
@@ -552,5 +657,8 @@ video {
     }
     .elza::after {
         top: -100px;
+    }
+    .coluna-img {
+        display: none;
     }
 }
