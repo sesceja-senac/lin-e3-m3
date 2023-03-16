@@ -9,6 +9,7 @@ video {
 .bg-1 {
     background-image: url('../design/pg1/bg_escuro.png');
     position: relative;
+    /* overflow-x: hidden; */
 }
 .bg-1 .container {
     background-color: transparent;
@@ -25,6 +26,10 @@ video {
     font-size: 28px;
     margin: 50px 0 15px 0;
 }
+.bg-1 h4 {
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
 .bg-2 {
     background-image: url('../design/pg1/bg_claro.png');
     position: relative;
@@ -36,7 +41,7 @@ video {
     position: relative;
 }
 .bg-2 h3 {
-    color: #457d7d;
+    color: #d68423;
     font-size: 28px;
     margin: 50px 0 15px 0;
 }
@@ -83,53 +88,93 @@ video {
     background-attachment: fixed;
 }
 
+/* rellax lp */
+.rellax {
+    position: absolute;
+    z-index: 15;
+}
+.rellax-1 {
+    top: 600px;
+}
+.rellax-2 {
+    top: 5000px;
+}
+.rellax-3 {
+    right: 0;
+    top: 7700px;
+    max-width: 480px;
+}
+.rellax-4 {
+    top: 8500px;
+    left: -20px;
+}
+.rellax-5 {
+    right: 0;
+    top: 2300px;
+}
+.rellax-6 {
+    top: 2800px;
+    max-width: 600px;
+}
+.rellax-7 {
+    right: 0;
+    bottom: -500px;
+}
+.rellax-8 {
+    right: 0;    
+    top: 400px;
+}
+.rellax-9 {
+    top: 150px;
+}
+.rellax-10 {
+    top: 1200px;
+    right: 0;
+}
+.rellax-11 {
+    top: 2500px;
+}
+.rellax-12 {
+    top: 2500px;
+    right: 0;
+    max-width: 450px;
+}
+.rellax-13 {
+    top: 3500px;
+    right: 0;
+}
+.rellax-14 {
+    top: 1500px;
+    left: 25px;
+}
+
+/* rellax yasmin */
 .marcador-div-pg3-6{
     position: absolute;
     top: 2500px;
-    right: 0;
+    right: 25px;
     transform: translateX(-50%);
     max-width: 15%;
 }
 .marcador-div-pg3-7 {
     position: absolute;
     top: 3600px;
-    left: 0;
+    left: 25px;
     transform: translateX(-50%);
     max-width: 15%;
 }
 .marcador-div-pg3-8{
     position: absolute;
     top: 4500px;
-    right: 0;
+    right: 25px;
     transform: translateX(-50%);
     max-width: 15%;
 }
 .marcador-div-pg3-9 {
     position: absolute;
-    top: 2300px;
-    right: 0;
+    top: 1700px;
+    right: 25px;
     max-width: 20%;
-}
-.marcador-div-pg3-10 {
-    position: absolute;
-    top: 2500px;
-    left: 120%;
-    transform: translateX(-50%);
-    max-width: 45%;
-}
-.marcador-div-pg3-3 {
-    position: absolute;
-    bottom: 2200px;
-    left: -10%;
-    transform: translateX(-50%);
-    max-width: 30%;
-}
-.marcador-div-pg3-4 {
-    position: absolute;
-    bottom: 500px;
-    left: 120%;
-    transform: translateX(-50%);
-    max-width: 30%;
 }
 .marcador-div {
     position: absolute;
@@ -146,6 +191,15 @@ video {
     max-height: 450px;
     max-width: 100%;
 }
+.marcador-div-3 {
+    position: absolute;
+    top: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    max-height: 450px;
+    max-width: 100%;
+}
+
 .bg-refs {
     padding-top: 60px;
     padding-bottom: 80px;
@@ -498,14 +552,14 @@ video {
     display: block;
     width: 300px;
     height: 337px;
-    background-image: url('../design/pg2/bt_objeto_hover.png');
+    background-image: url('../design/pg2/bt_objeto.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     margin-right: 20px;
 }
 .obj-cortico:hover {
-    background-image: url('../design/pg2/bt_objeto.png');
+    background-image: url('../design/pg2/bt_objeto_hover.png');
 }
 .btn-objetopg3 {
     display: flex;
@@ -672,11 +726,7 @@ video {
 .carousel.sesc .carousel-control-prev-icon, .carousel.sesc .carousel-control-next-icon {
     background-color: transparent;
 }
-.p-b h3 {
-    color: #d68423;
-    font-size: 28px;
-    margin: 50px 0 15px -200px;
-}
+
 .tooltip-link {
     color: inherit;
     text-decoration: none;
