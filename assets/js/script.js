@@ -35,3 +35,31 @@ $('.galeria-container').hover(function(){
     $(this).children('.modal-galeria').fadeOut()
 })
 if(window.innerWidth<1000){$('.modal-galeria').fadeIn()}
+
+$('.menu-btn').click(function () {
+    if ($('.menu').hasClass('hidden')) {
+        $('.menu').removeClass('hidden')
+    } else {
+        $('.menu').addClass('hidden')
+    }
+})
+
+// reposicionamento do botao do menu
+
+$(window).scroll(function () {
+
+    var topPos = $(this).scrollTop();
+
+    // if user scrolls down..
+    if (topPos > 100) {
+        $('.menu-btn').css("top", "20px");
+        if(window.innerWidth<809){$('.menu').css('top', '100px')}else{$('.menu').css("top", "10px");}
+
+    } else {
+        $('.menu-btn').css("top", "125px");
+        if(window.innerWidth<809){$('.menu').css('top', '180px')}else{$('.menu').css("top", "115px");}
+        
+        
+    }
+
+}); // scroll END

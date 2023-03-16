@@ -30,13 +30,16 @@
     <header id="topo" class="sesc no-print">
         <img src="../assets/img/cabecalho/cabecalho.png" class="d-none d-lg-block img-fluid" alt="">        
     </header>
+    <button class="menu-btn no-print">
+        <img src="../assets/design/menu/menu-hamburguer.png">
+    </button>
     <!-- Section principal deve ter o booklet, pois faz parte do print.js -->    
     <section id="booklet">
         <!--Dentro do section devemos ter um elemento com a classe paginas, para funcionar a paginação/print-->
         <header class="titulo-conteudo mb-0 print">
             <div class="container" style="padding-top:1px">
                 <!--titulo do curso para o print e leitor de tela-->
-                <h1 id="nome-curso" class="d-none print mt-0 text-center w-100">Matemática</h1>
+                <h1 id="nome-curso" class="d-none print mt-0 text-center w-100">Linguagens e suas tecnologias</h1>
                 <div class="row g-0 pb-4 pt-4">
                     <div class="col-9 d-flex flex-column justify-content-center align-items-start">                      
                         <h2 class="only-print">Cultura e resistência</h2>
@@ -49,6 +52,14 @@
         </header>
         <section class="paginas">
             <div class="pagina">
+                <div class="menu no-print hidden">
+                    <a href="index.html?page=1#link-intro">Introdução</a>
+                    <a href="index.html?page=1#link-cultura">Cultura de massa</a>
+                    <a href="index.html?page=1#link-pop">Pop art</a>
+                    <a href="index.html?page=1#link-superlative">Superlative clauses</a>
+                    <a href="index.html?page=1#link-jovem">Jovem guarda</a>
+                    <a href="index.html?page=1#link-tropical">Tropicalismo</a>
+                </div>
                 <div class="container-fluid bg-1">
                     <div class="container">
                         <h2>Introdução</h2>
@@ -922,8 +933,9 @@
                                             Fonte: G1 (2019)
                                         </figcaption>
                                     </figure>
-                                    <h4>!! tooltip</h4>
-                                    <p>Atualmente, Machado de Assis é considerado um escritor negro. Isso foi constatado após pesquisas que mostraram que o autor era neto de ex-escravizados e filho de pais pardos. Assim, não seria possível que Machado tivesse a pele branca, como por muito tempo acreditou-se. Com isso, durante anos, convivemos com a figura de um Machado de Assis caucasiano e sem nenhum traço que remetesse à sua afrodescendência. </p>
+
+                                    <p>Atualmente, Machado de Assis é considerado um escritor negro. Isso foi constatado após pesquisas que mostraram que o autor era neto de ex-escravizados e filho de pais pardos. Assim, não seria possível que Machado tivesse a pele branca, como por muito tempo acreditou-se. Com isso, durante anos, convivemos com a figura de um Machado de Assis <a href="#" data-bs-toggle="tooltip" class="tooltip-link" title="" data-bs-original-title="Pessoa com descendência europeia, caracterizada pela pele clara.">caucasiano</a> e sem nenhum traço que remetesse à sua afrodescendência. </p>
+                                    <p class="only-print"><b>Caucasiano</b>: Pessoa com descendência europeia, caracterizada pela pele clara.</p>
                                     <p>Observando as duas fotografias anteriores, percebemos que se trata da mesma imagem. No entanto, o que as diferencia é justamente a cor da pele do escritor. Na primeira, a forte luz da foto dá a impressão de que o rosto do autor é claro, além de criar a ilusão de que seu nariz tem um formato mais afinado (típico dos europeus) do que realmente ele tinha. É como se ele tivesse usado um filtro de redes sociais, como o Instagram, que escondesse as imperfeições da pele e, de quebra, embranquecesse seu rosto. Aliás, hoje existem muitos desses filtros que acabam clareando as imagens com o intuito de “embelezar” nosso rosto. Logo, tirando o “filtro”, a imagem mais real de Machado de Assis é a da direita, na qual temos um homem de pele escura e nariz mais largo, traços característicos de sua descendência africana. </p>
                                     
                                 </div>
@@ -937,6 +949,14 @@
                 </div>
             </div>
             <div class="pagina">
+                <div class="menu no-print hidden">
+                    <a href="index.html?page=1#link-intro">Introdução</a>
+                    <a href="index.html?page=1#link-cultura">Cultura de massa</a>
+                    <a href="index.html?page=1#link-pop">Pop art</a>
+                    <a href="index.html?page=1#link-superlative">Superlative clauses</a>
+                    <a href="index.html?page=1#link-jovem">Jovem guarda</a>
+                    <a href="index.html?page=1#link-tropical">Tropicalismo</a>
+                </div>
                 <div class="bg-1">
                     <div class="container">
                         <h3>Naturalismo</h3>
@@ -1156,6 +1176,14 @@
                 </div>
             </div>
             <div class="pagina">
+                <div class="menu no-print hidden">
+                    <a href="index.html?page=1#link-intro">Introdução</a>
+                    <a href="index.html?page=1#link-cultura">Cultura de massa</a>
+                    <a href="index.html?page=1#link-pop">Pop art</a>
+                    <a href="index.html?page=1#link-superlative">Superlative clauses</a>
+                    <a href="index.html?page=1#link-jovem">Jovem guarda</a>
+                    <a href="index.html?page=1#link-tropical">Tropicalismo</a>
+                </div>
                 <div class="bg-2 p-b">
                     <div class="container">
                         <h3>Arte urbana</h3>
@@ -1174,7 +1202,7 @@
                                         Fonte: Stowe (s. d.)
                                     </figcaption>
                                 </figure>
-                                <img src="../assets/design/pg3/pixo_1.png" alt="" class="marcador-div-pg3-2">
+                                
                                 <p>Os exemplos do artista TARS e de muitos outros só reforçam a ideia de que a <b>arte</b> não precisa estar somente dentro dos museus, ela pode estar estampada também nas ruas das nossas cidades, como nos muros, nas instalações, nas esculturas, entre outros exemplos. </p>
                                 <p>Esse estilo de arte que encontramos na rua se chama <em>street art</em> (termo em inglês) e teve sua origem nos Estados Unidos, na década de 1970. A <em>street art</em>, ou “arte urbana”, como chamamos aqui no Brasil, são modalidades artísticas que acontecem nos espaços públicos de uma cidade e não precisam estar atreladas a um museu ou um espaço institucional. </p>
                                 <p>Além das pinturas nos muros – o famoso grafite –, a arte urbana também é representada com a dança, a música, as <em>performances</em> dos artistas de rua, como palhaços, malabaristas e estátuas-vivas. </p>
@@ -1218,7 +1246,7 @@
                             <li data-bs-target="#carouselId" data-bs-slide-to="2"></li>
                         </ol>
                     </div>
-                    <img src="../assets/design/pg3/pixo_2.png" alt="" class="marcador-div-pg3-3">
+                    
                     <div class="only-print">
                         <figure>
                             <img src="../assets/design/pg3/figura_27_slideshow.png"
@@ -1245,7 +1273,7 @@
                             </figcaption>
                         </figure>
                     </div>
-                    <img src="../assets/design/pg3/elemento_1.png" alt="" class="marcador-div-pg3-10">
+                    
                     <p>A arte de rua contém uma característica mais efêmera, ou seja, existe um caráter temporário na sua existência, sendo totalmente imprevisível a sua permanência.  </p>
                     <p>Muitas das manifestações artísticas existentes na arte urbana entraram em cena objetivando causar algum impacto no espectador e por esse motivo podemos afirmar que ela tem um caráter social e político. Outro ponto a se debater é a valorização do artista urbano, que em muitos casos tem a arte como única fonte de sobrevivência. Esses artistas enfrentam diversos desafios para manterem a arte urbana ativa. Assim, que tal fazer uma reflexão a respeito da importância desses artistas para sociedade? </p>
                     <p>Vamos juntos ponderar sobre a importância de valorizar o trabalho de pessoas que objetivam colorir e alegrar nossa cidade? </p>
@@ -1258,7 +1286,7 @@
                     </figure>
                     <p>Entre as modalidades de arte urbana temos também as seguintes:</p>
                     <p>Clique ou toque para visualizar o conteúdo.</p>
-                    <img src="../assets/design/pg3/pixo_3.png" alt="" class="marcador-div-pg3-4">
+                    
                     <div class="accordion painel-gaitinha" id="accordion1">
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="headingOne">
@@ -1336,8 +1364,24 @@
                         </div>
                     </div>
                     <p>Mas onde se iniciou essa cultura urbana de que tanto ouvimos falar? Ouça o <em>podcast</em> a seguir para conhecer a história da cultura urbana. </p>
-                    <h4>!! audio</h4>
-                    <img src="../assets/design/pg3/podcast.png" alt="" class="img-fluid d-block mx-auto">
+                    <img src="../assets/design/pg3/podcast.png" class="img-fluid d-block mx-auto mt-5" alt="">
+                    <div class="sesc-audio-player no-print">
+                        <audio>
+                            <source src="../assets/audio/podcast_1.mp3" type="audio/mpeg">
+                        </audio>
+                        <div class="row g-0 align-items-center justify-content-center">
+                            <div class="col-12 audio-btns">
+                                <button title="Tocar" class="btn-play btn-player mx-1"></button>
+                                <button title="Pause" class="btn-pause btn-player mx-1"></button>
+                                <button title="Transcrição" data-bs-toggle="modal" data-bs-target="#modal-transcricao" class="btn-transcricao btn-player mx-1"></button>
+                                <div class="timestamp">00:00/00:00</div>
+                            </div>
+                            <div class="col-12 mt-2 mt-lg-0">
+                                <input type="range" value="0" max="100" step="any">
+                            </div>
+                        </div>
+
+                    </div>
                     <div class="only-print">
                         <p>A cultura urbana surgiu no início da década de 1970, na periferia de Nova Iorque, mais precisamente no distrito
                             de
@@ -1467,8 +1511,11 @@
                 </div>
                 <div class="divisoria-pg3-5"></div>
                 <div class="bg-1">
+                    <img src="../assets/design/pg3/pixo_6.png" alt="" class="marcador-div-pg3-6 rellax" data-rellax-speed="2">
+                    <img src="../assets/design/pg3/pixo_7.png" alt="" class="marcador-div-pg3-7 rellax" data-rellax-speed="2">
+                    <img src="../assets/design/pg3/pixo_8.png" alt="" class="marcador-div-pg3-8 rellax" data-rellax-speed="2">
                     <div class="container">
-                        <img src="../assets/design/pg3/pixo_4.png" alt="" class="marcador-div-pg3-1">
+                        
                         <h4>Vamos conhecer alguns artistas que se destacaram nessa modalidade?</h4>
                         <div class="btn-objetopg3">
                             <a href="" class="obj-pg3">
@@ -1694,18 +1741,18 @@
                             </div>
                             <button></button>
                         </div>
-                        <img src="../assets/design/pg3/pixo_5.png" alt="" class="marcador-div-pg3-5">
+                        
                         <h4>Você sabe a diferença entre grafite e pichação?</h4>
                         <p>Embora as duas formas se manifestem semelhantemente, ou seja, são desenhos e grafias realizados com <em>spray</em> em espaços públicos, existe aqui no Brasil uma certa distinção entre elas. </p>
                         <p>A pichação acaba sendo considerada vandalismo por não ter um caráter político, que deveria estar presente nas manifestações urbanas. Outro conceito que também descaracteriza a pichação é o conceito de beleza que está por trás dela. Muitos não consideram a estética da pichação algo visualmente aceitável e acabam ligando a pichação à poluição visual. </p>
                         <p>Mas é importante que você saiba que, cada vez mais, a criminalização da pixação tem caído em desuso. Dessa forma, a pixação tem se aproximado do universo do grafite, como uma expressão artística e social legítima! </p>
-                        <img src="../assets/design/pg3/pixo_6.png" alt="" class="marcador-div-pg3-6">
+                        
                         <figure>
                             <img src="../assets/design/pg3/figura_37.png" class="img-fluid d-block mx-auto" alt="A imagem mostra um muro pichado em área urbana.">
                             <figcaption>Figura 37 – Muro com pichações <br>
                                 Fonte: Miranda (2015) </figcaption>
                         </figure>
-                        <img src="../assets/design/pg3/pixo_7.png" alt="" class="marcador-div-pg3-7">
+                        
                         <p>Conectados à arte urbana existem os esportes urbanos, movimentos culturais que andam lado a lado. Na rotina urbana, conseguimos encontrar diversas atividades esportivas, muitas das quais surgiram sem maiores pretensões. Porém, conforme foi aumentando a migração de pessoas do interior para as cidades urbanas, muitas modalidades se expandiram, tornando-se reconhecidas e ganhando adeptos. Um exemplo que está presente atualmente na vida dos brasileiros é o <em>skate</em>. O esporte foi criado por surfistas da Califórnia, na década de 1960. Por muito tempo, a modalidade foi marginalizada, inclusive foi proibida de ser praticada na cidade de São Paulo, pelo então prefeito Jânio Quadros, em 1988. </p>
                         <p>Os skatistas, ou esqueitistas, reuniram-se e saíram às ruas em passeata para revogar a decisão. Segundo os praticantes, a única justificativa da proibição da prática de <em>skate</em> era a sua marginalização. </p>
                         <figure>
@@ -1713,7 +1760,7 @@
                             <figcaption>Figura 38 – Skatistas <br>
                                 Fonte: Pimentel (2021) </figcaption>
                         </figure>
-                        <img src="../assets/design/pg3/pixo_8.png" alt="" class="marcador-div-pg3-8">
+                        
                         <p>A modalidade atingiu seu ápice nas Olimpíadas de Tóquio, quando o <em>skate</em> entrou nos Jogos Olímpicos, e nossos atletas brasileiros Kelvin Hoefler, Rayssa Leal e Pedro Barros conquistaram três inéditas medalhas de prata para o Brasil. </p>
                         <p>Conheça um pouco mais de cada atleta clicando ou tocando nos botões a seguir: </p>
                         <!-- <h4>!! painel clicavel</h4> -->
@@ -1724,84 +1771,86 @@
                                 <button data-bs-toggle="modal" data-bs-target="#modal-skt-3"></button>
                             </div>
                         </div>
-                        <div class="modal fade" id="modal-skt-3" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="false">
-                            <div class="modal-dialog" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title">Pedro Barros</h5>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <div class="container">
-                                            <p>Pedro Barros ganhou a medalha de prata nos Jogos Olímpicos de Tóquio. Aos 14 anos, surpreendeu o mundo do <em>skate</em> ao terminar em 3º lugar, no X-Games de Los Angeles. </p>
-                                            <figure>
-                                                <img src="../assets/design/pg3/figura_41.png" class="img-fluid d-block mx-auto" alt="A imagem mostra um atleta fazendo uma manobra no “skate”. Ele está usando uma camiseta branca, bermuda preta, joelheira e capacete brancos. Ao fundo está o logo da olimpíada e as palavras “Tokyo 2020”. ">
-                                                <figcaption>
-                                                    Figura 41 – Pedro Barros <br>
-                                                    Fonte: Nóbrega <em>apud</em> Time Brasil (2021)
-                                                </figcaption>
-                                            </figure>
-                                        </div>
-                                    </div>
-                                    <div class="modal-footer justify-content-center">
-                                        <button type="button" class="btn-sesc" data-bs-dismiss="modal">Fechar</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="modal fade" id="modal-skt-2" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="false">
-                            <div class="modal-dialog" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title">Kelvin Hoefler</h5>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <div class="container">
-                                            <p>O atleta de 29 anos inaugurou o quadro de medalhas brasileiro nos Jogos Olímpicos de Tóquio, conquistando a medalha de prata. Kelvin já foi campeão mundial em 2015. </p>
-                                            <figure>
-                                                <img src="../assets/design/pg3/figura_40.png" class="img-fluid d-block mx-auto" alt="A imagem mostra um homem de estatura alta, sorridente. Ele veste um casaco do Brasil e um boné azul. Na mão esquerda segura a medalha de prata e na mão direita segura um buquê de flores.">
-                                                <figcaption>Figura 40 – Kelvin Hoefler <br>
-                                                    Fonte: Melville <em>apud</em> Avelar (2021) </figcaption>
-                                            </figure>
-                                        </div>
-                                    </div>
-                                    <div class="modal-footer justify-content-center">
-                                        <button type="button" class="btn-sesc" data-bs-dismiss="modal">Fechar</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="modal fade" id="modal-skt-1" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="false">
-                            <div class="modal-dialog" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title">Rayssa Leal</h5>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <div class="container">
-                                            <p>Rayssa Leal conquistou a medalha de prata no <em>street</em> nos Jogos Olímpicos de Tóquio, em 2021, com apenas 13 anos. Além disso, venceu o The Visa Awards, prêmio que reconhece o atleta que mais representou os valores olímpicos durante os jogos, pelo fato de ter torcido e vibrado durante as apresentações das outras atletas que estavam competindo com ela no Japão. </p>
-                                            <figure>
-                                                <img src="../assets/design/pg3/figura_39.png" class="img-fluid d-block mx-auto" alt="A imagem mostra uma menina de estatura baixa, com cabelos crespos e escuros. Ela veste um casaco do Brasil e está sorridente. Em sua mão esquerda segura um buquê de girassóis e na mão direita segura a medalha de prata que está na boca, sendo levemente mordida.">
-                                                <figcaption>Figura 39 – Rayssa Leal <br>
-                                                    Fonte: Detefon <em>apud</em> Exame (2023) </figcaption>
-                                            </figure>
-                                        </div>
-                                    </div>
-                                    <div class="modal-footer justify-content-center">
-                                        <button type="button" class="btn-sesc" data-bs-dismiss="modal">Fechar</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        
                         <p>Como observado, os movimentos da contracultura trouxeram para as minorias urbanas um caráter de resistência e de valorização de seus costumes. Assim, tanto a arte quanto os esportes refletem a vivência daqueles que estão à margem da sociedade. </p>
                         <p>Nesse contexto, é necessário abordar um outro tipo de cultura, que também é minorizada por muitos, mas que se apresenta como um exemplo de como resistir às violências sofridas ao longo da história. Estamos falando dos povos indígenas que, por meio da preservação de suas tradições, mantêm sua cultura viva. </p>                    
+                    </div>
+                </div>
+                <div class="modal fade" id="modal-skt-3" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="false">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Pedro Barros</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="container">
+                                    <p>Pedro Barros ganhou a medalha de prata nos Jogos Olímpicos de Tóquio. Aos 14 anos, surpreendeu o mundo do <em>skate</em> ao terminar em 3º lugar, no X-Games de Los Angeles. </p>
+                                    <figure>
+                                        <img src="../assets/design/pg3/figura_41.png" class="img-fluid d-block mx-auto" alt="A imagem mostra um atleta fazendo uma manobra no “skate”. Ele está usando uma camiseta branca, bermuda preta, joelheira e capacete brancos. Ao fundo está o logo da olimpíada e as palavras “Tokyo 2020”. ">
+                                        <figcaption>
+                                            Figura 41 – Pedro Barros <br>
+                                            Fonte: Nóbrega <em>apud</em> Time Brasil (2021)
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                            </div>
+                            <div class="modal-footer justify-content-center">
+                                <button type="button" class="btn-sesc" data-bs-dismiss="modal">Fechar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="modal-skt-2" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="false">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Kelvin Hoefler</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="container">
+                                    <p>O atleta de 29 anos inaugurou o quadro de medalhas brasileiro nos Jogos Olímpicos de Tóquio, conquistando a medalha de prata. Kelvin já foi campeão mundial em 2015. </p>
+                                    <figure>
+                                        <img src="../assets/design/pg3/figura_40.png" class="img-fluid d-block mx-auto" alt="A imagem mostra um homem de estatura alta, sorridente. Ele veste um casaco do Brasil e um boné azul. Na mão esquerda segura a medalha de prata e na mão direita segura um buquê de flores.">
+                                        <figcaption>Figura 40 – Kelvin Hoefler <br>
+                                            Fonte: Melville <em>apud</em> Avelar (2021) </figcaption>
+                                    </figure>
+                                </div>
+                            </div>
+                            <div class="modal-footer justify-content-center">
+                                <button type="button" class="btn-sesc" data-bs-dismiss="modal">Fechar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="modal-skt-1" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="false">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Rayssa Leal</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="container">
+                                    <p>Rayssa Leal conquistou a medalha de prata no <em>street</em> nos Jogos Olímpicos de Tóquio, em 2021, com apenas 13 anos. Além disso, venceu o The Visa Awards, prêmio que reconhece o atleta que mais representou os valores olímpicos durante os jogos, pelo fato de ter torcido e vibrado durante as apresentações das outras atletas que estavam competindo com ela no Japão. </p>
+                                    <figure>
+                                        <img src="../assets/design/pg3/figura_39.png" class="img-fluid d-block mx-auto" alt="A imagem mostra uma menina de estatura baixa, com cabelos crespos e escuros. Ela veste um casaco do Brasil e está sorridente. Em sua mão esquerda segura um buquê de girassóis e na mão direita segura a medalha de prata que está na boca, sendo levemente mordida.">
+                                        <figcaption>Figura 39 – Rayssa Leal <br>
+                                            Fonte: Detefon <em>apud</em> Exame (2023) </figcaption>
+                                    </figure>
+                                </div>
+                            </div>
+                            <div class="modal-footer justify-content-center">
+                                <button type="button" class="btn-sesc" data-bs-dismiss="modal">Fechar</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="divisoria-pg3-4"></div>
                 <div class="bg-2 p-b">
                     <div class="divisoria-pg3-1"></div>
+                    <img src="../assets/design/pg3/elemento_lateral (1).png" alt="" class="marcador-div-pg3-9 rellax" data-rellax-speed="2">
                     <div class="container">
                         <h3>Cultura indígena</h3>
                         <div class="row">
@@ -1812,7 +1861,7 @@
                                 <p>Agora, após entender as lutas das comunidades marginalizadas, vamos conhecer alguns exemplos de como este movimento de contracultura ocorre dentro da cultura indígena. </p>
                                 <p>Quanto aos esportes indígenas, você sabia que existem os Jogos Mundiais dos Povos Indígenas (JMIs)? Os JMIs já foram realizados no Brasil, na cidade de Palmas, em 2015, reunindo cerca de 2.300 atletas de 20 países diferentes. Muito da cultura indígena se assemelha aos esportes olímpicos. Que tal conhecer alguns desses esportes? </p>
                                 <p>Clique ou toque para visualizar o conteúdo. </p>
-                                <img src="../assets/design/pg3/elemento_lateral (1).png" alt="" class="marcador-div-pg3-9">
+                                
                                 <div class="accordion painel-gaitinha" id="accordion2">
                                     <div class="accordion-item">
                                         <h2 class="accordion-header" id="headingOne">
@@ -1824,17 +1873,17 @@
                                             <div class="accordion-body">
                                                 <p>O arco e flecha é um exemplo de esporte indígena. Os instrumentos eram suas armas de guerra e sobrevivência, utilizados pelos indígenas para defenderem seus povos e para a prática de caça. O arco e flecha está presente nos Jogos Mundiais dos Povos Indígenas e é o esporte indígena mais popular, já o tiro com arco está presente nos Jogos Olímpicos de Verão desde 1972. </p>
                                                 <figure>
-                                                    <img src="../assets/design/pg3/figura_42.png" alt="A imagem apresenta um índio como figura central, utilizando arco e flecha. Ao fundo está uma oca em frente a ela estão algumas pessoas assistindo.">
+                                                    <img src="../assets/design/pg3/figura_42.png" class="img-fluid d-block mx-auto" alt="A imagem apresenta um índio como figura central, utilizando arco e flecha. Ao fundo está uma oca em frente a ela estão algumas pessoas assistindo.">
                                                     <figcaption>Figura 42 – Arco e flecha indígena <br>
                                                         Fonte: Pinto (2015)</figcaption>
                                                 </figure>
                                                 <figure>
-                                                    <img src="../assets/design/pg3/figura_43.png" alt="A imagem apresenta três índios utilizando arco e flecha. Eles estão apontando para a esquerda.">
+                                                    <img src="../assets/design/pg3/figura_43.png" class="img-fluid d-block mx-auto" alt="A imagem apresenta três índios utilizando arco e flecha. Eles estão apontando para a esquerda.">
                                                     <figcaption>Figura 43 – Tiro com arco e flecha sendo praticado em competições indígenas <br>
                                                         Fonte: Freitas (2016) </figcaption>
                                                 </figure>
                                                 <figure>
-                                                    <img src="../assets/design/pg3/figura_44.png" alt="A imagem apresenta um atleta utilizando o arco e flecha. Ele usa vestimentas nas cores amarelo, verde e azul.">
+                                                    <img src="../assets/design/pg3/figura_44.png" class="img-fluid d-block mx-auto" alt="A imagem apresenta um atleta utilizando o arco e flecha. Ele usa vestimentas nas cores amarelo, verde e azul.">
                                                     <figcaption>Figura 44 – Tiro com arco, modalidade conhecida por estar presente nos Jogos Olímpicos até os dias atuais <br>
                                                         Fonte: Mendes <em>apud</em> Rede do Esporte (2016?) </figcaption>
                                                 </figure>
@@ -1852,12 +1901,12 @@
                                                 <p>A lança é usada tradicionalmente pelos índios como ferramenta de pesca, caça e defesa pessoal contra animais selvagens. O arremesso de lança é praticado exclusivamente pelos homens indígenas. Vence a competição quem conseguir arremessar a lança o mais longe possível. O esporte é semelhante ao lançamento de dardo, tradicional modalidade olímpica praticada desde os Jogos Olímpicos de Londres, em 1908. </p>
                                                 <h4>!! imagens lado a lado</h4>
                                                 <figure>
-                                                    <img src="../assets/design/pg3/figura_45.png" alt="A imagem mostra um índio fazendo o arremesso de uma lança. Ele está posicionado em um estádio, no qual o chão é de areia. Ao fundo há uma arquibancada repleta de pessoas que estão assistindo.">
+                                                    <img src="../assets/design/pg3/figura_45.png" class="img-fluid d-block mx-auto" alt="A imagem mostra um índio fazendo o arremesso de uma lança. Ele está posicionado em um estádio, no qual o chão é de areia. Ao fundo há uma arquibancada repleta de pessoas que estão assistindo.">
                                                     <figcaption>Figura 45 – Arremesso de lança indígena <br>
                                                         Fonte: Oliveira <em>apud</em> GE (2015) </figcaption>
                                                 </figure>
                                                 <figure>
-                                                    <img src="../assets/design/pg3/figura_46.png" alt="A imagem apresenta um atleta arremessando uma lança. Ele usa vestimenta verde, azul e amarela.">
+                                                    <img src="../assets/design/pg3/figura_46.png" class="img-fluid d-block mx-auto" alt="A imagem apresenta um atleta arremessando uma lança. Ele usa vestimenta verde, azul e amarela.">
                                                     <figcaption>Figura 46 – Lançamento de dardo <br>
                                                         Fonte: <em>Blog</em> Desportos (s. d.) </figcaption>
                                                 </figure>
@@ -1874,12 +1923,12 @@
                                             <div class="accordion-body">
                                                 <p>A canoagem é um importante meio de transporte para os indígenas, muito utilizado também para a prática de pesca. Os índios construíam as canoas com elementos disponíveis na natureza. Com o tempo, a canoagem tornou-se um esporte dentro da cultura, sendo uma das principais modalidades nos Jogos Mundiais dos Povos Indígenas. Já a canoagem como modalidade olímpica está presente nos Jogos Olímpicos desde 1936, em Berlim. O brasileiro Isaquias Queiroz, hexacampeão mundial e campeão olímpico, é um dos principais nomes do esporte no mundo. </p>
                                                 <figure>
-                                                    <img src="../assets/design/pg3/figura_47.png" alt="A imagem apresenta quatro índios remando sobre um rio. Eles estão em dupla em duas canoas.">
+                                                    <img src="../assets/design/pg3/figura_47.png" class="img-fluid d-block mx-auto" alt="A imagem apresenta quatro índios remando sobre um rio. Eles estão em dupla em duas canoas.">
                                                     <figcaption>Figura 47 – Canoagem <br>
                                                         Fonte: GE (2015) </figcaption>
                                                 </figure>
                                                 <figure>
-                                                    <img src="../assets/design/pg3/figura_48.png" alt="A imagem apresenta uma atleta remando uma canoa sobre um rio. Ele usa vestimentas nas cores azul, verde e amarela.">
+                                                    <img src="../assets/design/pg3/figura_48.png" class="img-fluid d-block mx-auto" alt="A imagem apresenta uma atleta remando uma canoa sobre um rio. Ele usa vestimentas nas cores azul, verde e amarela.">
                                                     <figcaption>Figura 48 – Isaquias Queiroz praticando canoagem <br>
                                                         Fonte: GE (2022) </figcaption>
                                                 </figure>
@@ -1896,12 +1945,12 @@
                                             <div class="accordion-body">
                                                 <p>Para os indígenas, a valência da força física é de extrema importância e gera um grande destaque. Diante disso, a modalidade do cabo de força é uma das provas mais esperadas nos JMIs. Cada time é composto de dez atletas posicionados em fila e o cabo é puxado em sentidos opostos pelas equipes. A equipe ganhadora é aquela que consegue trazer para o seu próprio campo o time adversário. Semelhantemente ao cabo de força, o cabo de guerra foi um esporte olímpico entre os anos 1900 e 1920. Hoje em dia, o cabo de guerra é uma brincadeira recreativa bastante praticada em escolas e pelas crianças. </p>
                                                 <figure>
-                                                    <img src="../assets/design/pg3/figura_49.png" alt="A imagem apresenta seis índios puxando um cabo de força. Eles estão posicionados em um estádio no qual o chão é de areia. Ao fundo, há uma arquibancada repleta de pessoas assistindo.">
+                                                    <img src="../assets/design/pg3/figura_49.png" class="img-fluid d-block mx-auto" alt="A imagem apresenta seis índios puxando um cabo de força. Eles estão posicionados em um estádio no qual o chão é de areia. Ao fundo, há uma arquibancada repleta de pessoas assistindo.">
                                                     <figcaption>Figura 49 – Cabo de força (Jogos Indígenas) <br>
                                                         Fonte: EBC (2015)</figcaption>
                                                 </figure>
                                                 <figure>
-                                                    <img src="../assets/design/pg3/figura_50.png" alt="A imagem apresenta oito crianças brincando de cabo de força. Elas estão divididas em quatro crianças de cada lado e puxam a corda com força.">
+                                                    <img src="../assets/design/pg3/figura_50.png" class="img-fluid d-block mx-auto" alt="A imagem apresenta oito crianças brincando de cabo de força. Elas estão divididas em quatro crianças de cada lado e puxam a corda com força.">
                                                     <figcaption>Figura 50 – Cabo de guerra recreativo <br>
                                                         Fonte: Rodrigues (s. d.) </figcaption>
                                                 </figure>
@@ -1975,13 +2024,12 @@
                                         Na aldeia ou na cidade, <br>
                                         Nossa uka não se desfaz.
                                     </p>
-                                    <p>Em seu poema, a autora, nascida em uma comunidade ticuna no Estado do Amazonas, fala um pouco de
+                                    <p>Em seu poema, a autora, nascida em uma comunidade <a href="#" data-bs-toggle="tooltip" class="tooltip-link" title="" data-bs-original-title="Povo indígena mais numeroso da região amazônica.">ticuna</a> no Estado do Amazonas, fala um pouco de
                                         sua vida na floresta, das lutas de seu povo e da sua ancestralidade. Por fim, ela afirma não
                                         importar se o seu povo está na aldeia ou na cidade, pois sua uka (casa) sempre estará de pé, ou
                                         seja, a cultura indígena permanecerá viva. </p>
-                                    !!Diagramação: tooltip padrão (palavra na cor do texto e tracejada) na palavra em destaque Ticuna
-                                    Texto para a tooltip: 
-                                    Povo indígena mais numeroso da região amazônica.
+
+                                    <p class="only-print"><b>Ticuna</b>: Povo indígena mais numeroso da região amazônica.</p>
                                     <figure>
                                         <img src="../assets/design/pg3/figura_51.png" class="img-fluid d-block mx-auto"
                                             alt="A imagem mostra a capa do livro “O lugar do saber ancestral”, de Márcia Wayna Kambeba, na qual duas crianças estão em uma canoa em um rio. O título do livro está em destaque e o nome da autora está abaixo, com fonte menor.">
@@ -1992,7 +2040,7 @@
                                     </figure>
                                     <p>Um outro livro muito importante para entender a visão indígena da vida e da natureza é <i>A Queda
                                             do
-                                            Céu</i> (2015), de <b>Davi Kopenawa</b>. Nessa obra, o xamã ianomâmi narra muito de sua
+                                            Céu</i> (2015), de <b>Davi Kopenawa</b>. Nessa obra, o xamã <a href="#" data-bs-toggle="tooltip" class="tooltip-link" title="" data-bs-original-title="também chamado de yanomami, é um dos maiores povos indígenas da América do Sul, que vive no norte do Brasil e no sul da Venezuela">ianomâmi</a> narra muito de sua
                                         biografia misturada
                                         a experiências e rituais xamânicos, além de fazer uma grande defesa da floresta amazônica. Os
                                         relatos de Kopenawa foram transcritos pelo etnólogo-escritor francês <b>Bruce Albert</b>, cuja
@@ -2000,19 +2048,21 @@
                                         com o indígena se dá há mais de 30 anos. Sua narrativa, entre outros pontos, denuncia o homem
                                         branco, que invadiu suas terras trazendo doenças, violência e a destruição da natureza. Perceba
                                         a visão que o xamã tem da natureza neste trecho: “Na floresta, a ecologia somos nós, os humanos.
-                                        Mas são também, tanto quanto nós, os xapiri, os animais, as árvores, os rios, os peixes, o céu,
+                                        Mas são também, tanto quanto nós, os <a href="#" data-bs-toggle="tooltip" class="tooltip-link" title="" data-bs-original-title="Espíritos guardiões das florestas, nos quais os ancestrais animais dos povos ianomâmi se
+                                        transformaram.">xapiri</a>, os animais, as árvores, os rios, os peixes, o céu,
                                         a chuva, o vento e o sol!” (KOPENAWA, 2015). </p>
                                     <p>Trata-se de uma percepção da natureza como algo parte de nós. Para Davi Kopenawa, o humano, os
-                                        animais, as árvores, os xapiri (espíritos guardiões da floresta) e os fenômenos meteorológicos
+                                        animais, as árvores, os <a href="#" data-bs-toggle="tooltip" class="tooltip-link" title="" data-bs-original-title="Espíritos guardiões das florestas, nos quais os ancestrais animais dos povos ianomâmi se
+                                        transformaram.">xapiri</a> (espíritos guardiões da floresta) e os fenômenos meteorológicos
                                         são partes de um todos. Portanto, devemos cuidar e valorizar nossas riquezas naturais ao invés
                                         de destruí-las, como costuma fazer o homem branco ao desmatar em busca de lucro. </p>
-                                    !!Diagramação: tooltip padrão (palavra na cor do texto e tracejada) nas palavras em destaque xapiri
-                                    e ianomâmi
-                                    Texto para a tooltip:  
-                                    Xapiri: espíritos guardiões das florestas, nos quais os ancestrais animais dos povos ianomâmi se
-                                    transformaram.
-                                    Ianomâmi: também chamado de yanomami, é um dos maiores povos indígenas da América do Sul, que vive
-                                    no norte do Brasil e no sul da Venezuela.
+
+                                    <p class="only-print">
+                                        <b>Xapiri</b>: espíritos guardiões das florestas, nos quais os ancestrais animais dos povos ianomâmi se
+                                        transformaram.<br>
+                                        <b>Ianomâmi</b>: também chamado de yanomami, é um dos maiores povos indígenas da América do Sul, que vive
+                                        no norte do Brasil e no sul da Venezuela.
+                                    </p>
                                     <figure>
                                         <img src="../assets/design/pg3/figura_52.png" class="img-fluid d-block mx-auto"
                                             alt="A imagem mostra a capa do livro “A Queda do Céu”, de Davi Kopenawa, em que, na parte inferior, é possível visualizar o perfil da face de um índio. Na parte superior está o título do livro: “A queda do céu – Palavras de um xamã yanomami”. Abaixo disso estão os nomes Davi Kopanawa e Bruce Albert.">
@@ -2065,11 +2115,9 @@
                                     diretamente ligada a um contexto social e religioso. Tradicionalmente, a música indígena é
                                     caracterizada por canções e ritmos próprios, em que se utilizam diferentes instrumentos, como a
                                     flauta, o violão, além de instrumentos de percussão, como o maracá, uma espécie de chocalho
-                                    feito de cabaça e sementes, caroços ou pedras, ornamentado com desenhos geométricos indígenas e
+                                    feito de <a href="#" data-bs-toggle="tooltip" class="tooltip-link" title="" data-bs-original-title="Fruto do qual se fazem objetos, como a cuia, entre outros.">cabaça</a> e sementes, caroços ou pedras, ornamentado com desenhos geométricos indígenas e
                                     penas. </p>
-                                !!Diagramação: tooltip padrão (palavra na cor do texto e tracejada) na palavra em destaque cabaça  
-                                Texto para a tooltip:  
-                                Fruto do qual se fazem objetos, como a cuia, entre outros.
+                                <p class="only-print"><b>Cabaça</b>: Fruto do qual se fazem objetos, como a cuia, entre outros.</p>
                                 <figure>
                                     <img src="../assets/design/pg3/figura_54.png" class="img-fluid d-block mx-auto"
                                         alt="A imagem apresenta quatro instrumentos indígenas, semelhantes a um chocalho.">
@@ -2082,14 +2130,13 @@
                                     na música eletrônica e no <i>rap</i>. É o caso do DJ Eric Terena e do grupo Brô MC’s.</p>
                                 <p> Geralmente, quando se fala em música eletrônica, a figura de uma pessoa indígena não costuma ser
                                     a primeira que nos vem à cabeça. No entanto, o jornalista e DJ Eric Marky Terena mostra que é
-                                    possível sim comandar as pickups de grandes festivais de música mundo afora. Tendo se
+                                    possível sim comandar as <a href="#" data-bs-toggle="tooltip" class="tooltip-link" title="" data-bs-original-title="Equipamentos do DJ, como toca-discos e aparelhos de mixagem de música."><em>pickups</em></a> de grandes festivais de música mundo afora. Tendo se
                                     apresentado no Brasil, na Escócia, na Inglaterra, entre outros países, Terena, que nasceu na
                                     aldeia Cachoeirinha, no Mato Grosso do Sul, leva para os palcos canções de artistas indígenas em
                                     busca da valorização dos povos originários e da conscientização sobre a preservação da natureza.
                                 </p>
-                                !!Diagramação: tooltip padrão (palavra na cor do texto e tracejada) na palavra em destaque  pickups
-                                Texto para a tooltip:  
-                                Equipamentos do DJ, como toca-discos e aparelhos de mixagem de música.
+
+                                <p class="only-print"><b><em>Pickups</em></b>: Equipamentos do DJ, como toca-discos e aparelhos de mixagem de música.</p>
                                 <figure>
                                     <img src="../assets/design/pg3/figura_55.png" class="img-fluid d-block mx-auto"
                                         alt="A imagem mostra o DJ Eric Terena, um homem indígena, que está vestindo camisa preta, jaqueta com detalhes e cocar. Ao fundo está uma imagem colorida.">
@@ -2103,13 +2150,10 @@
                                     quatro
                                     integrantes inspiraram-se muito no grupo Racionais MC’s para compor suas músicas. Nestas, são
                                     expostas muitas das questões indígenas atuais, como a demarcação de terras desses povos, o
-                                    cotidiano na aldeia Ka´aguy hovy Porã, no município de Maricá (RJ), além das tradições de seu
+                                    cotidiano na aldeia <a href="#" data-bs-toggle="tooltip" class="tooltip-link" title="" data-bs-original-title="Comunidade indígena guarani.">Ka´aguy hovy Porã</a>, no município de Maricá (RJ), além das tradições de seu
                                     povo.
                                 </p>
-                                !!Diagramação: tooltip padrão (palavra na cor do texto e tracejada) na palavra em destaque  Ka´aguy
-                                hovy Porã
-                                Texto para a tooltip:  
-                                Comunidade indígena guarani
+                                <p class="only-print"><b>Ka´aguy hovy Porã</b>: Comunidade indígena guarani</p>
                                 <figure>
                                     <img src="../assets/design/pg3/figura_56.png" class="img-fluid d-block mx-auto"
                                         alt="A imagem apresenta um grupo musical composto de quatro homens indígenas. Eles vestem roupas urbanas e usam cocar. ">
@@ -2336,6 +2380,14 @@
                 </div>
             </div>
             <div class="pagina">
+                <div class="menu no-print hidden">
+                    <a href="index.html?page=1#link-intro">Introdução</a>
+                    <a href="index.html?page=1#link-cultura">Cultura de massa</a>
+                    <a href="index.html?page=1#link-pop">Pop art</a>
+                    <a href="index.html?page=1#link-superlative">Superlative clauses</a>
+                    <a href="index.html?page=1#link-jovem">Jovem guarda</a>
+                    <a href="index.html?page=1#link-tropical">Tropicalismo</a>
+                </div>
                 <div class="bg-1 p-b">
                     <div class="container">
                         <h3>Saiba mais</h3>
@@ -2645,6 +2697,14 @@
                 </div>
             </div>
             <div class="pagina">
+                <div class="menu no-print hidden">
+                    <a href="index.html?page=1#link-intro">Introdução</a>
+                    <a href="index.html?page=1#link-cultura">Cultura de massa</a>
+                    <a href="index.html?page=1#link-pop">Pop art</a>
+                    <a href="index.html?page=1#link-superlative">Superlative clauses</a>
+                    <a href="index.html?page=1#link-jovem">Jovem guarda</a>
+                    <a href="index.html?page=1#link-tropical">Tropicalismo</a>
+                </div>
                 <div class="bg-refs">
                     <div class="container">
                         <h2>Referências</h2>
@@ -3153,7 +3213,8 @@
     <script src="../assets/js/geral.js"></script>
     <script src="../assets/js/script.js"></script>
     <script src="../assets/js/aos.js"></script>
-    <script>AOS.init()</script>
+    <script src="../assets/js/rellax.min.js"></script>
+    <script>AOS.init(); var rellax = new Rellax('.rellax');</script>
  <!-- Versao atual do handtalk -->
     <script>
         var scriptElem=document.createElement("script");
