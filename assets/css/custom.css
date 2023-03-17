@@ -1,3 +1,7 @@
+@font-face {
+    font-family: 'marker';
+    src: url('../design/menu/PermanentMarker-Regular.ttf');
+}
 video {
     background-color: #333;
     width: 560px;
