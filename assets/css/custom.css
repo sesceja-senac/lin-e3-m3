@@ -113,8 +113,8 @@ video {
     top: 2300px;
 }
 .rellax-6 {
-    top: 2800px;
-    max-width: 600px;
+    top: 2900px;
+    max-width: 500px;
 }
 .rellax-7 {
     right: 0;
@@ -542,11 +542,17 @@ video {
     margin-left: -300px;
     margin-right: 300px;
 }
+.btn-objeto h4 {
+    margin: 0;
+}
 .btn-objeto {
     display: flex;
     justify-content: end;
     align-items: center;  
     margin: 40px auto;
+}
+.btn-obj-2 {
+    justify-content: center;
 }
 .obj-cortico {
     display: block;
@@ -886,6 +892,21 @@ video {
 .painel-gaitinha .accordion-button {
     font-family: unset;
 }
+.f-19 {
+    max-width: 100%;
+    max-height: 600px;
+}
+.f-22 {
+    max-width: 100%;
+    max-height: 500px;
+}
+.f-21 {
+    max-width: 100%;
+    max-height: 500px;
+}
+figure {
+    margin: 30px auto;
+}
 
 @media (max-width: 1000px){
     /* galeria */
@@ -903,7 +924,9 @@ video {
         max-width: 40%;
     }
     .galeria-container img {margin: 20px auto; display: block;}
-
+    .coluna-img-pg3 {
+        display: none;
+    }
 
     .coluna-img img{
         max-width: 100%;
@@ -960,6 +983,20 @@ video {
 }
 
 @media (max-width:600px) {
+    .menu-btn {
+        left: unset;
+        right: 20px;
+    }
+    .obj-cddpg3-2 {
+        flex-wrap: wrap;
+        background-image: unset;
+    }
+    .obj-cddpg3-2 button:nth-child(1), .obj-cddpg3-2 button:nth-child(2), .obj-cddpg3-2 button:nth-child(3), .obj-cddpg3-2 button:nth-child(4) {
+        margin-bottom: unset;
+    }
+    .letra-2 {
+        margin-top: unset;
+    }
     .sesc-audio-player {
         margin: -10px auto;
         background-color: #007178;
@@ -1007,6 +1044,10 @@ video {
         height: 150px;
         bottom: -5%;
     }
+    .letra-2::after {
+        left: unset;
+        right: 0;
+    }
     .obj-cddpg3 {
         height: auto;
         flex-wrap: wrap;
@@ -1024,6 +1065,9 @@ video {
         width: 150px;
         height: 150px;
         bottom: -5%;
+    }
+    .bg-1, .bg-2 {
+        overflow-x: hidden;
     }
     .letra-1::after {
         bottom: -15%;
