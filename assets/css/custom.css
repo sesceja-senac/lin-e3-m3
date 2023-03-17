@@ -923,12 +923,23 @@ figure {
     transform: translateY(-8px);
     pointer-events:none;
 }
+@media (max-width:1800px){
+    .rellax {max-width: 14%;}
+    .rellax-3 {max-width: 17%;}
+    .rellax-6{max-width: 19%;}
+    .rellax-12{max-width: 19%;}
+    .rellax-1{max-width: 18%;}
+    .rellax-5{max-width: 18%;}
+}
 @media (max-width:1400px){
     .rellax {max-width: 250px;}
     .rellax-9 {
         width: 200px;
     }
     .coluna-img {margin-left: -300px;}
+}
+@media(max-width:1325px){
+    .rellax{max-width: 15%;}
 }
 @media (max-width: 1000px){
     /* galeria */
