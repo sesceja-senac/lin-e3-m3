@@ -1,8 +1,10 @@
 // animate__animated animate__backInRight animate__delay-1s
 $('.botao-fechar').click(function(){
+    $('.titulo').removeClass('non-visible')
+    $('.start-bt').removeClass('non-visible')
     $('.backdrop').fadeOut()
-    // $('.link-start').addClass('animate__animated animate__backInRight animate__delay-1s')
+    $('.titulo').addClass('animate__animated animate__backInLeft animate__delay-1s')
     window.setTimeout(function() {
-        // $('.start-bt').addClass('animate__animated animate__backInRight animate__delay-1s')
+        $('.start-bt').addClass('animate__animated animate__backInRight animate__delay-1s')
     }, 500)
 })

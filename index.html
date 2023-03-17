@@ -7,13 +7,21 @@
      <!-- Bootstrap CSS v5.0.2 -->      
     <link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/animate.min.css" />
-    <link rel="stylesheet" href="assets/css/tela_inicial.css" />
     <link rel="stylesheet" href="assets/fa/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/tela_inicial.css" />
+    <link rel="stylesheet" href="assets/css/preloader.css">
     <title>Tela inicial</title>
 </head>
 <body>
+    <div class="preloader">
+        <div class="anim"></div>
+        <h1>Aguarde enquanto o conteúdo é carregado.</h1>
+    </div>
     <div id="wrapper">
-        
+        <img src="assets/design/pg_inicial/titulo.png" class="titulo non-visible">
+        <img src="assets/design/pg_inicial/ilustra.png" class="ilustra">
+        <a href="conteudo/index.html" class="start-bt non-visible"></a>
+
 
         <div class="backdrop">
             <div class="modal-intro">
@@ -33,6 +41,7 @@
     <script src="assets/js/jquery-3.6.0.min.js"></script>
     <!-- Bootstrap JavaScript Libraries -->
     <script src="assets/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/geral.js"></script>
     <script src="assets/js/tela_inicial.js"></script>
 </body>
 

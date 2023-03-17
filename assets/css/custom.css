@@ -907,7 +907,25 @@ video {
 figure {
     margin: 30px auto;
 }
-
+#accordion1 .accordion-button img {
+    max-height: 50px;
+    margin-right: 10px;
+}
+.visitada a {
+    opacity: 0.8;
+    background-color: rgba(221, 221, 221);
+}
+.pagination .active {
+    transform: translateY(-8px);
+    pointer-events:none;
+}
+@media (max-width:1400px){
+    .rellax {max-width: 250px;}
+    .rellax-9 {
+        width: 200px;
+    }
+    .coluna-img {margin-left: -300px;}
+}
 @media (max-width: 1000px){
     /* galeria */
     .modal-galeria {

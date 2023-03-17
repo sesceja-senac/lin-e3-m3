@@ -63,3 +63,8 @@ $(window).scroll(function () {
     }
 
 }); // scroll END
+
+if(window.location.search=='?page=5'){
+    console.log('pg5')
+    $('.bt-print').css('margin-top', '50px')
+}
