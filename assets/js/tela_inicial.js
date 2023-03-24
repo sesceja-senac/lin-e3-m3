@@ -8,3 +8,7 @@ $('.botao-fechar').click(function(){
         $('.start-bt').addClass('animate__animated animate__backInRight animate__delay-1s')
     }, 500)
 })
+$('.botao-video').click(function(){
+  $('.backdrop').fadeIn()
+  $('html').css('overflow', 'hidden')
+})

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="assets/css/style-cortico.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <title>O Cortiço</title>
+</head>
+
+<body class="body-cortico">
+  <audio id="meuAudio">
+    <source src="assets/audio/som-bg.mp3" type="audio/mp3">
+  </audio>
+  <div class="conteudo-cortico correcao-adaptativa">
+    <section class="tela-inicial-cortico position-absolute efeito-bg">
+      <div>
+        <img src="assets/Img/Logo_OCortico.png" class="img-fluid logo-cortico efeito-logo position-absolute" alt="O Cortiço">
+        <img src="assets/Img/02_O_Cortico_FINAL_sem lettering.png" class="img-fluid " alt="cenário e personagens">
+      </div>
+      <div class="btns-cortico">
+        <button type="button" id="meuBotao" class="position-absolute btn-ampliar som-clique"><i class="material-icons">volume_up</i></button>
+        <button type="button" class="btn-menu sem-fundo position-absolute btn-ampliar som-clique" data-bs-toggle="modal" data-bs-target="#modal-menu"><img class="img-fluid" src="assets/Img/04_botao_Personagens.png" alt="Botão para voltar na tela inicial"></button>
+        <button type="button" class="resumo sem-fundo position-absolute btn-ampliar som-clique"><img class="img-fluid" src="assets/Img/03_botao_Resumo_da_Obra.png" alt="Botão para voltar na tela inicial" data-bs-toggle="modal" data-bs-target="#resumo"></button>
+        <button type="button" class="personagem position-absolute btn-ampliar som-clique" id="personagem1"><span class="material-symbols-outlined"> remember_me </span></button>
+        <button type="button" class="personagem position-absolute btn-ampliar som-clique" id="personagem2"><span class="material-symbols-outlined"> remember_me </span></button>
+        <button type="button" class="personagem position-absolute btn-ampliar som-clique" id="personagem3"><span class="material-symbols-outlined"> remember_me </span></button>
+        <button type="button" class="personagem position-absolute btn-ampliar som-clique" id="personagem4"><span class="material-symbols-outlined"> remember_me </span></button>
+        <button type="button" class="personagem position-absolute btn-ampliar som-clique" id="personagem5"><span class="material-symbols-outlined"> remember_me </span></button>
+        <button type="button" class="personagem position-absolute btn-ampliar som-clique" id="personagem6"><span class="material-symbols-outlined"> remember_me </span></button>
+        <button type="button" class="personagem position-absolute btn-ampliar som-clique" id="personagem7"><span class="material-symbols-outlined"> remember_me </span></button>
+        <button type="button" class="personagem position-absolute btn-ampliar som-clique" id="personagem8"><span class="material-symbols-outlined"> remember_me </span></button>
+      </div>
+    </section>
+  </div>
+
+  <!-- Modal Menu personagens -->
+  <div>
+    <div id="modal-cortico"></div>
+  </div>
+
+  <div class="modal fade" id="modal-menu" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header menuzinho">
+          <h1 class="modal-title fs-8 h1-personagens" id="exampleModalLabel">Personagens</h1>
+          <button type="button" class="sem-fundo fecha-resumo btn-ampliar som-fechar" data-bs-dismiss="modal" aria-label="Close"><img class="img-fluid" src="assets/Img/_06botao_fechar.png" alt="Botão para voltar na tela inicial"></button>
+        </div>
+        <div class="modal-body color-menu">
+          <button type="button" class="btn estilo-menu mb-2 form-control" data-target="1">Marciana</button>
+          <button type="button" class="btn estilo-menu mb-2 form-control" data-target="2">Jeronimo</button>
+          <button type="button" class="btn estilo-menu mb-2 form-control" data-target="3">Paula</button>
+          <button type="button" class="btn estilo-menu mb-2 form-control" data-target="4">Rita Baiana</button>
+          <button type="button" class="btn estilo-menu mb-2 form-control" data-target="5">Pombinha</button>
+          <button type="button" class="btn estilo-menu mb-2 form-control" data-target="6">João Romão</button>
+          <button type="button" class="btn estilo-menu mb-2 form-control" data-target="7">Miranda</button>
+          <button type="button" class="btn estilo-menu mb-2 form-control" data-target="8">Bertoleza</button>
+        </div>
+        <div class="modal-footer color-menu">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Resumo-->
+  <div class="modal fade" id="resumo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-header title-resumo">
+          <h1 class="modal-title fs-8" id="exampleModalLabel">O Cortiço</h1>
+          <button type="button" class="sem-fundo fecha-resumo som-fechar" data-bs-dismiss="modal" aria-label="Close"><img class="img-fluid" src="assets/Img/_06botao_fechar.png" alt="Botão para voltar na tela inicial"></button>
+        </div>
+        <div class="modal-body cor-bg">
+          <p class="p-descricao cor-text"> O Cortiço é, talvez, a mais importante obra literária do
+            Naturalismo no Brasil. Criado pelo escritor Aluísio
+            Azevedo e publicado pela primeira vez em 1890, o livro trata, como o próprio título já indica, de um
+            cortiço.
+            O lugar é administrado por João Romão, que vive às custas da exploração de seus inquilinos e de sua amante,
+            Bertoleza, escrava que fugiu de seus donos.
+            Outro personagem da história é o comerciante Miranda. Ele se muda para uma casa ao lado do cortiço e, por
+            ser
+            um homem mais bem-sucedido, causa inveja em João Romão, que deseja enriquecer mais que o vizinho.
+            Entre essa disputa, Miranda recebe um título de barão, o que faz com que João Romão passe a respeitar mais o
+            comerciante e melhore as condições de moradia dos habitantes do local. Além disso, João Romão se aproxima da
+            família de Miranda e pede a mão da filha do agora barão em casamento.
+            No entanto, a amante Bertoleza tenta impedir que isso aconteça, mas João Romão planeja uma manobra para
+            devolver a mulher escravizada para seus senhores. O que acontece no final, é que, desesperada com a ideia de
+            voltar a ser escrava, Bertoleza se suicida, deixando o caminho livre para João Romão se casar com a filha de
+            Miranda.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modo-smart">
+    <div class="text-center">
+      <p class="p-paisagem text-center"><img src="assets/Img/vire.gif" class="img-fluid img-paisagem d-inline-block"><br><strong>Por favor, gire o aparelho para o modo paisagem.</strong></p>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"> </script>
+  <script src="assets/js/script-cortico.js"></script>
+</body>
+
+</html>

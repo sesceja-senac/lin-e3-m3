@@ -310,6 +310,21 @@ video {
     left: -55px;
     top: 0px;
 }
+.icone.vamos-praticar::before {
+    background-color: transparent;
+    background-image: url('../design/pg2/ico_praticar.png');
+    background-size: contain;
+    height: 148px;
+    width: 148px;
+    left: -55px;
+    top: 0px;
+}
+.cx-laranja.icone.vamos-praticar{
+    padding: 57px;    padding-left: 80px;
+}
+.icone.vamos-praticar a{
+    color: #fff;
+}
 
 .figure-row {
     display: flex;
