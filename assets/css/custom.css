@@ -12,6 +12,19 @@ video {
 p{
     word-break: break-all;
 }
+.pg-footer {
+    background-color: transparent;
+    position: absolute;
+    bottom: 0;
+}
+#booklet>footer>ul>li.active a {
+    background-color: #00838d;
+    color: #fff;
+}
+.pg-footer a:visited {
+    color: #7a7a7a;
+    background-color: #d9d9d9;
+}
 /* BGs */
 .bg-1 {
     background-image: url('../design/pg1/bg_escuro.png');
