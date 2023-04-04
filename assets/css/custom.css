@@ -9,6 +9,9 @@ video {
     display: block;
     margin: 60px auto;
 }
+p{
+    word-break: break-all;
+}
 /* BGs */
 .bg-1 {
     background-image: url('../design/pg1/bg_escuro.png');
@@ -1029,11 +1032,16 @@ figure {
         min-height: 460px;
     }
 }
-
+@media (max-width:768px) {
+    .menu-btn {
+        left: 1px;
+        margin-top: -76px;
+    }
+}
 @media (max-width:600px) {
     .menu-btn {
-        left: unset;
-        right: 20px;
+        left: 1px;
+        margin-top: -76px;
     }
     .obj-cddpg3-2 {
         flex-wrap: wrap;
