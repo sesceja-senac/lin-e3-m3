@@ -1043,6 +1043,21 @@ figure {
         left: 1px;
         margin-top: -76px;
     }
+    .marcador-div {
+        position: absolute;
+        top: -325px;
+        left: 50%;
+        transform: translateX(-50%);
+        max-width: 100%;
+    }
+    .marcador-div-2 {
+        position: absolute;
+        top: -580px;
+        left: 50%;
+        transform: translateX(-50%);
+        max-height: 450px;
+        max-width: 100%;
+    }
     .obj-cddpg3-2 {
         flex-wrap: wrap;
         background-image: unset;
