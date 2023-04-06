@@ -47,14 +47,7 @@ $(document).ready(function () {
     resizeBodyCortico()
   })
 
-  $(".conteudo-cortico").delay(500).animate({
-    "opacity": "1",
-
-  }, "slow", function () {
-    $('.efeito-logo').animate({
-      opacity: '1'
-    }, 1000);
-  })
+  
 
 });
 
@@ -143,30 +136,46 @@ function abreViaMenu() {
 
 function somClique() {
   $("body").on("click", '.som-fechar', function () {
-    var audio = new Audio('../assets/audio/som_modal.wav');
+    var audio = new Audio('assets/audio/som_modal.mp3');
     audio.play();
   });
 }
 
 function somFechar() {
   $("body").on("click", '.som-clique', function () {
-    var audio = new Audio('../assets/audio/clique.wav');
+    var audio = new Audio('assets/audio/clique.mp3');
     audio.play();
   });
 }
 
 $(document).ready(function () {
+  $("#modal-intro").modal("show")
+  $(".bto-iniciar").click(function (){
+    $(".conteudo-cortico").delay(500).animate({
+      "opacity": "1",
+  
+    }, "slow", function () {
+      $('.efeito-logo').animate({
+        opacity: '1'
+      }, 1000);
+     
+    })
+    meuAudio.volume = 0.9;
+    meuAudio.play();
+    $("#modal-intro").modal("hide");
+  })
   var meuAudio = $('#meuAudio')[0];
-
+ 
   $('#meuBotao').click(function () {
     var icone = $('#meuBotao').find('i');
     if (icone.text() === 'volume_up') {
       icone.text('volume_off');
-      meuAudio.volume = 0.9;
-      meuAudio.play();
+      meuAudio.pause();
+      
     } else {
       icone.text('volume_up');
-      meuAudio.pause();
+      meuAudio.volume = 0.9;
+      meuAudio.play();
     }
   });
 });

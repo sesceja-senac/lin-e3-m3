@@ -34,6 +34,27 @@ body {
     overflow: hidden;
 }
 
+#modal-intro .modal-body.introducao {
+    background: url(../img/Modal_introducao.png) top left / 100% auto no-repeat;
+    width: 552px;
+    height: 353px;
+    color: #906c70
+  }
+  #modal-intro .modal-content {
+    width: 552px !important;
+    left: calc(50% - 280px) !important;
+
+  }
+.bto-iniciar {
+    background: url(../img/botao_iniciar.png) top left / 100% auto;
+    width: 250px;
+    height: 57px;
+    display: block;
+    position: relative;
+    margin-left: auto; margin-right: auto;
+    border: 0px none;
+    color: rgba(0,0,0,0);
+}
 .conteudo-cortico {
     width: 1920px;
     height: 1080px;
