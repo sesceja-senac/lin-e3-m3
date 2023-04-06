@@ -1,0 +1,54 @@
+body {
+    background-color: darkgray;
+}
+
+.capa {
+    margin: 30px;
+    border: 2px solid darkgray;
+    border-radius: 10px;
+    padding: 30px;
+    background-color: white;
+    max-width: 600px;
+}
+
+.txt {
+    margin-top: 20px;
+}
+
+.wifi {
+    background-color: #2a818b;
+    border-radius: 10px;
+    color: white;
+    padding: 31px;
+    width: 100%;
+    font-size: 16px;
+}
+
+.clique {
+    border-radius: 10px;
+    width: 100%;
+    font-size: 16px;
+}
+
+#continuar {
+    background-color: #2a818b;
+    color: white;
+    box-shadow: 5px 5px #ffa300;
+    border: none;
+    padding: 5px;
+    width: 50%;
+    font-size: 16px;
+    margin: 5%;
+    text-align: center;
+    text-decoration: none;
+  }
+
+#continuar:hover {
+    background-color: #ffa300;
+    box-shadow: 5px 5px #2a818b;
+}
+
+.sesc {
+    margin: 5px;
+    width: 40%;
+}
