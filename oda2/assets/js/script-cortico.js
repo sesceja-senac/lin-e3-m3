@@ -105,7 +105,7 @@ const modalPersonagem = (params) => {
     <div class="modal-content">
     <div class="modal-body tamanho ${params.classPersonagem}">
     <div class="nome-personagem position-relative"><h2 class="h2-personagem"><strong>${params.nomePersonagem}</strong></h2></div>
-    <button type="button" class="sem-fundo fechar position-relative som-fechar btn-ampliar" data-bs-dismiss="modal" aria-label="Close"><img class="img-fluid" src="assets/img/_06botao_fechar.png" alt="Botão para voltar na tela inicial"></button>
+    <button type="button" class="sem-fundo fechar position-relative som-fechar btn-ampliar" data-bs-dismiss="modal" aria-label="Close"><img class="img-fluid" src="assets/img/06_botao_fechar.png" alt="Botão para voltar na tela inicial"></button>
     <div class="descricao position-relative">
     <p class="p-descricao">${params.textPersonagem}</p>
     </div>
